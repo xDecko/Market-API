@@ -1,4 +1,4 @@
-package com.decko.market.persistence.entitys;
+package com.decko.market.persistence.entity;
 
 import jakarta.persistence.*;
 
@@ -11,6 +11,9 @@ public class ComprasProductoPK implements Serializable {
 
     @Column(name = "id_producto")
     private Integer idProducto;
+
+
+    // GETTER & SETTER
 
     public Integer getIdCompra() {
         return idCompra;

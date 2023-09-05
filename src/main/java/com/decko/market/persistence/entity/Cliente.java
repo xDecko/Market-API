@@ -1,6 +1,8 @@
-package com.decko.market.persistence.entitys;
+package com.decko.market.persistence.entity;
 
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name="clientes")
@@ -15,6 +17,11 @@ public class Cliente {
 
     @Column(name="correo_electronico")
     private String correoElectronico;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compras;
+
+    // GETTER & SETTER
 
     public String getId() {
         return id;

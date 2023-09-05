@@ -1,4 +1,4 @@
-package com.decko.market.persistence.entitys;
+package com.decko.market.persistence.entity;
 
 import jakarta.persistence.*;
 
@@ -27,6 +27,11 @@ public class Producto {
     private Integer cantidadStock;
 
     private Boolean estado;
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria",insertable = false, updatable = false)
+    private Categoria categoria;
+
 
     // GETTER & SETTER
     public Integer getIdProducto() {
