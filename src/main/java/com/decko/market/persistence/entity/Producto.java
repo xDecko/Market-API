@@ -5,10 +5,9 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "productos")
 public class Producto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    //@Column en caso de que mi variable sea diferente al nombre de la columna en la DB
     @Column(name = "id_producto")
     private Integer idProducto;
 
@@ -29,11 +28,9 @@ public class Producto {
     private Boolean estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_categoria",insertable = false, updatable = false)
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
 
-
-    // GETTER & SETTER
     public Integer getIdProducto() {
         return idProducto;
     }
@@ -90,5 +87,12 @@ public class Producto {
         this.estado = estado;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
 
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }
+
