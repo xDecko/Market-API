@@ -9,7 +9,7 @@ public class Purchase {
     private LocalDateTime date;
     private String paymentMethod;
     private String comment;
-    private  String state;
+    private String state;
     private List<PurchaseItem> items;
 
     public int getPurchaseId() {
@@ -68,3 +68,4 @@ public class Purchase {
         this.items = items;
     }
 }
+

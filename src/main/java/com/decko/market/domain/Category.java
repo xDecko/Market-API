@@ -5,8 +5,6 @@ public class Category {
     private String category;
     private boolean active;
 
-    // GETTER & SETTER
-
     public int getCategoryId() {
         return categoryId;
     }
