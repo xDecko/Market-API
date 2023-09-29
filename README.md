@@ -1,9 +1,29 @@
 # Market-API
 Java-SpringBoot Market API
 
-Source code repository for an online marketplace built with Java and Spring Boot.
+Source code repository for an online marketplace built with | API REST |  SpringBoot | Spring JPA | Hibernate | PostgreSQL | Swagger |
 
+# The API provides the following features:
 
+- Get all products: Retrieves a list of all products available in the database.
+- Add a new product: Adds a new product to the database.
+- Update an existing product: Updates an existing product in the database.
+- Delete an existing product: Deletes an existing product from the database.
+- Get a product by ID: Retrieves a product by its unique identifier.
+- Search for products: Searches for products by name, reference, or category.
+
+# Technologies Used
+
+The API is built using the following technologies:
+
+- Java 17: The Java version.
+- Spring Boot 3.0.10: A powerful framework for building Java-based web applications.
+- Spring Data JPA: Simplifies database access and management.
+- Swagger: Provides interactive API documentation.
+- Hibernate Validator: For validating data sent in requests.
+- Lombok: Reduces repetitive code.
+- Cross-Origin Resource Sharing (CORS): Allows cross-domain requests from web applications.
+- 
 # Endpoints
 
 The API endpoints are as follows:
