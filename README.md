@@ -1,7 +1,8 @@
 # Market-API
 Java-SpringBoot Market API
 
-Source code repository for an online marketplace built with | API REST |  SpringBoot | Spring JPA | Hibernate | PostgreSQL | Swagger |
+Source code repository for an online marketplace API REST built with 
+|  SpringBoot | Spring JPA | Hibernate | PostgreSQL |
 
 # The API provides the following features:
 
